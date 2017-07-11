@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaume Regas at Gambling.com</title>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav id="top" class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#div-flex">DIV FLEX <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#hide-show">HIDE / SHOW</a></li>
+                    <li><a href="#seo">SEO</a></li>
+                    <li><a href="#pseudo-classes">PSEUDO CLASSES</a></li>
+                    <li><a href="#hoisting">HOISTING</a></li>
+                    <li><a href="#thanks">THANKS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /NAVBAR -->
+    <div class="container">
+        <h2>WHY ME?</h2>
+        <p>Why do I think I am the most suitable for the job?</p>
+        <div class="me">
+            <div class="general-info">
+                <h4>Jaume Regàs, 24</h4>
+                <p>Industrial Design Engineer</p>
+                <p>Front End Developer</p>
+            </div>
+            <img class="img-responsive" src="../img/jaume.jpg" alt="">
+            <div class="why-me">
+                <ul>
+                    <li>I am the "smart creative" person that you are looking for because:</li>
+                    <li>I am fully motivated to start working with you and make a contribution with my skills</li>
+                    <li>I am always entirely disposed to learn new concepts and technologies</li>
+                    <li>I am an enterprising person with initiative, and this website proves it</li>
+                    <li>I have critical judgment in design techniques</li>
+                    <li>I am detail-oriented and focus on quality assurance of work</li>
+                    <li>I am a good team worker, always positive and focused on the matter</li>
+                    <li>I am an engineer, but also a designer</li>
+                </ul>
+            </div>
+        </div>
+        <h2 id="div-flex">DIV FLEX</h2>
+        <p>How to make divs that automatically wrap in columns?</p>
+        <h3>Method #1 - Flex Box</h3>
+        <p class="text-just">For me, the simplest. While the wrap is a native HTML feature with inline-block elements, with Flex Box you get a lot more freedom to edit behaviors, for example, by centering the elements.
+            <br> Blocks container CSS properties: <strong>display: flex; flex-wrap: wrap;</strong></p>
+        <div class="block-flex-container">
+            <div class="block-flex">
+                <h3>Block 1</h3>
+                <p>Random text: Lorem ipsum subcrystalline autogenic cercopithecoid sunshiny cardiograph menopausal weathercockism pallescent ingeminate schnorrer playmate Gunz tinty scaphocephalic Christianization lumberly plutonometamorphism satinity deputationize nonextensile Pediculati.</p>
+            </div>
+            <div class="block-flex">
+                <h3>Block 2</h3>
+                <p>Random text: Lorem ipsum subcrystalline autogenic cercopithecoid sunshiny cardiograph menopausal weathercockism pallescent ingeminate schnorrer playmate Gunz tinty scaphocephalic Christianization lumberly plutonometamorphism satinity deputationize nonextensile Pediculati.</p>
+            </div>
+        </div>
+        <h3>Method #2 - Inline Blocks</h3>
+        <p class="text-just">Simpler at first, more complicated at the end. Blocks with "inline-block" property wrap automatically. However, to get this behavior and center the elements, you have to use even "media queries", this is not the best practice.
+            <br> Blocks CSS properties: <strong>display: inline-block;</strong></p>
+        <div class="block-inline-container">
+            <div class="center-blocks">
+                <div class="block-inline">
+                    <h3>Block 1</h3>
+                    <p>Random text: Lorem ipsum subcrystalline autogenic cercopithecoid sunshiny cardiograph menopausal weathercockism pallescent ingeminate schnorrer playmate Gunz tinty scaphocephalic Christianization lumberly plutonometamorphism satinity deputationize nonextensile Pediculati.</p>
+                </div>
+                <div class="block-inline">
+                    <h3>Block 2</h3>
+                    <p>Random text: Lorem ipsum subcrystalline autogenic cercopithecoid sunshiny cardiograph menopausal weathercockism pallescent ingeminate schnorrer playmate Gunz tinty scaphocephalic Christianization lumberly plutonometamorphism satinity deputationize nonextensile Pediculati.</p>
+                </div>
+            </div>
+        </div>
+        <h2 id="hide-show">HIDE / SHOW IN JS</h2>
+        <p>How to hide/show an element in plain JavaScript?</p>
+        <div class="hide-show">
+            <button id="hide-show-button">CLICK ME</button>
+            <div class="content" id="hide-show-div">
+                <p>document.getElementById('id').style.display = 'none'</p>
+            </div>
+        </div>
+        <h2 id="seo">SEO</h2>
+        <p>Google is using page speed in their ranking algorithm for SEO, how can we make our websites faster?</p>
+        <h3>Method #1 - Optimize images</h3>
+        <p class="text-just">Images must have the appropriate resolution depending on the size of the image shown on the website.</p>
+        <div class="img-resolution-container">
+            <!-- MODAL -->
+            <div class="modal fade" id="img-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="../img/max-res-img.png" alt="4K image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MODAL -->
+            <div class="img-info">
+                <h3><i class="ionicons ion-record"></i>Max resolution</h3>
+                <a href="#" data-toggle="modal" data-target="#img-modal">
+                    <img src="../img/max-res-img.png" alt="Full Resolution Image">
+                </a>
+                <p class="file-size">Size: 17,9 MB</p>
+                <p class="file-format">Format: PNG</p>
+                <p>This uncompressed 4K image in PNG format overloads the web page, is a bad practice; consequently, you are losing SEO. PNG format is used when transparencies are required (e.g., logos).</p>
+            </div>
+            <div class="img-info">
+                <h3><i class="ionicons ion-record green"></i>Compressed</h3>
+                <a href="#" data-toggle="modal" data-target="#img-modal">
+                    <img src="../img/comp-img.jpg" alt="Compressed Image">
+                </a>
+                <p class="file-size">Size: 27,1 KB</p>
+                <p class="file-format">Format: JPG</p>
+                <p>The same image, but with 400px resolution on the horizontal axis, the image must be optimized to save the maximum memory and improve the loading speed, JPG format weighs much less than PNG.</p>
+            </div>
+            <div class="img-info">
+                <h3><i class="ionicons ion-record"></i>Ultra Compressed</h3>
+                <a href="#" data-toggle="modal" data-target="#img-modal">
+                    <img src="../img/ultra-comp-img.jpg" alt="Ultra Compressed Image">
+                </a>
+                <p class="file-size">Size: 7,2 KB</p>
+                <p class="file-format">Format: JPG</p>
+                <p>Optimize, yes, but not too much. In this image you can see that it has been compressed too much and has lost image quality, so it would not be suitable. You have to optimize between image quality and weight.</p>
+            </div>
+        </div>
+        <div>
+            <h3>Method #2 - Minify files</h3>
+            <p class="text-just">To compress files (.html, .css, .js) you can use tools to minimize them automatically (Grunt, Gulp, among others).</p>
+            <h3>Method #3 - Static content with CDNs</h3>
+            <p class="text-just">Because the location of the user impacts page load speed, spreading your content across servers will speed up this process.</p>
+        </div>
+        <h2 id="pseudo-classes">PSEUDO CLASSES IN CSS</h2>
+        <p>What CSS pseudo classes do you know?</p>
+        <div class="pseudo-classes">
+            <p class="text-just">In this project, I have used different CSS pseudo classes such as: hover, after, before, active, first-of-type, first child and nth-child, among others. Example: <strong>hover &amp; after</strong></p>
+            <div class="text-just">
+                <button>Hover me</button>
+            </div>
+        </div>
+        <h2 id="hoisting">HOISTING</h2>
+        <p>What is hoisting?</p>
+        <div class="hoisting">
+            <p class="text-just">Hoisting is one of the peculiarities of JavaScript, and is given when we define a variable inside a function (in the scope), then the internal interpreter declares it at the beginning of its context.</p>
+            <p class="text-just">Important factor: JavaScript only hoists declarations, not initializations.</p>
+            <div class="hoisting-examples">
+                <div class="hoisting">
+                    <img class="img-responsive" src="../img/hoisting.jpg" alt="">
+                    <p>Depending on the scope, the value of the variable will change. When "f(1)" is executed, the variable updated "color", in fact, is the one that is inside the "if"; even if the condition is false, the declaration variable inside will hoist outside the conditional statement.</p>
+                </div>
+                <div class="hoisting">
+                    <img class="img-responsive" src="../img/hoisting-function.jpg" alt="">
+                    <p>In the first example, hoisting acts normally, the variable "f" (function) is declared, but it has no value when called.</p>
+                    <p>In the second case, unlike variables, a function declaration doesn't just hoist the function's name. It also hoists the actual function definition.</p>
+                </div>
+                <p class="text-just"><strong>Tip:</strong> variables has to be declared on the top of the script, but functions <strong>can</strong> be declared on the bottom.</p>
+            </div>
+        </div>
+        <h2 id="thanks">ACKNOWLEDGEMENT</h2>
+        <p>I appreciate your interest in my profile, thank you.</p>
+        <div class="acknowledgement-container">
+            <div class="ack-block">
+                <h3>Ellen Sheridan</h3>
+                <div class="img-hover">
+                    <img src="../img/ellen.jpg" alt="Ellen Sheridan">
+                </div>
+            </div>
+            <div class="ack-block">
+                <h3>Cormac McCann</h3>
+                <div class="img-hover easter-egg">
+                    <img src="../img/cormac.jpg" alt="Cormac McCann">
+                </div>
+            </div>
+            <div class="ack-block">
+                <h3>Virginia Otero</h3>
+                <div class="img-hover">
+                    <img src="../img/virginia.jpg" alt="Virginia Otero">
+                </div>
+            </div>
+        </div>
+        <p class="text-just thanks">I have developed this website to show that, although I am a recent graduate, I am qualified to work with you. I am the person that you are looking for because: I am highly motivated, I have the job required skills, I know how to code, and the most important thing, I know how to learn.<br>Thanks for your time and consideration.</p>
+        <div class="go-to-top">
+            <a href="#top">
+                <button class="top-button">GO TO TOP</button>
+            </a>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="made-by">
+            <p>Made by <a href="https://github.com/jaumereg">Jaume Regas</a></p>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script type="text/javascript" src="../js/smooth-scroll.js"></script>
+    <!-- Hide / Show -->
+    <script type="text/javascript" src="../js/hide-show.js"></script>
+</body>
+
+</html>
